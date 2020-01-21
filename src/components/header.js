@@ -1,14 +1,15 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-
 //CSS
+import classes from "../styles/header.module.css"
+//image
 import img from "../images/home/logo.png"
 
 const Header = () => {
   const [isExpanded, toggleExpansion] = useState(false)
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-white p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-gray-100 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <Link to="/">
           <img src={img} alt="logo" />
@@ -40,6 +41,7 @@ const Header = () => {
             to={`/`}
             href="#responsive-header"
             className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            activeClassName={classes.activeNavItem}
           >
             Home
           </Link>
@@ -49,6 +51,7 @@ const Header = () => {
             to={`/about`}
             href="#responsive-header"
             className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            activeClassName={classes.activeNavItem}
           >
             About Community
           </Link>
@@ -57,6 +60,7 @@ const Header = () => {
           <Link
             to={`/projects`}
             className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            activeClassName={classes.activeNavItem}
           >
             Project & Resources
           </Link>
@@ -65,6 +69,7 @@ const Header = () => {
           <Link
             to={`/events`}
             className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            activeClassName={classes.activeNavItem}
           >
             Events
           </Link>
@@ -72,7 +77,8 @@ const Header = () => {
         <div>
           <Link
             to={`/joinus`}
-            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-green-600 mr-4 active:text-white"
+            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-green-600 mr-4"
+            activeClassName={classes.activeNavItem}
           >
             Join Community
           </Link>
