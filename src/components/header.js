@@ -40,7 +40,7 @@ const Header = () => {
           <Link
             to={`/`}
             href="#responsive-header"
-            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-green-600 mr-4"
             activeClassName={classes.activeNavItem}
           >
             Home
@@ -50,7 +50,7 @@ const Header = () => {
           <Link
             to={`/about`}
             href="#responsive-header"
-            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-green-600 mr-4"
             activeClassName={classes.activeNavItem}
           >
             About Community
@@ -59,7 +59,7 @@ const Header = () => {
         <div>
           <Link
             to={`/projects`}
-            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-green-600 mr-4"
             activeClassName={classes.activeNavItem}
           >
             Project & Resources
@@ -68,7 +68,7 @@ const Header = () => {
         <div>
           <Link
             to={`/events`}
-            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-gray-900 mr-4"
+            className="block mt-4 px-4 leading-none lg:inline-block lg:mt-0 text-gray-600 text-1xl font-mono hover:text-green-600 mr-4"
             activeClassName={classes.activeNavItem}
           >
             Events
