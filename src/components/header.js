@@ -9,8 +9,8 @@ import img from "../images/home/logo.png"
 const Header = () => {
   const [isExpanded, toggleExpansion] = useState(false)
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-gray-100 p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
+    <nav className="flex items-center justify-between flex-wrap bg-white p-6">
+      <div className="flex items-center flex-shrink-0 text-white ml-10">
         <Link to="/">
           <img src={img} alt="logo" />
         </Link>
