@@ -1,11 +1,12 @@
 import React from "react"
+import Layout from "./layout"
+// import JoinUs from "./joinus"
 
 const IndexPage = () => {
   return (
-    <div>
-      {/* A demo display text, delete before actual development */}
-      <center>HELLO, JOIN US TO BUILD THIS PAGE</center>
-    </div>
+    <Layout>
+
+    </Layout>
   )
 }
 

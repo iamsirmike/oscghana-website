@@ -1,7 +1,10 @@
 import React from "react"
+import Layout from "./layout"
 
 const JoinUs = () => {
-  return <div></div>
+  return (
+    <Layout></Layout>
+  )
 }
 
 export default JoinUs
